@@ -83,7 +83,18 @@ li {
 #Section1 > img {
     margin-top: 2em;
     margin-right: 170px;
+    animation: bounce 1.5s;
 }
+
+@keyframes bounce {
+    from{
+        transform: translateX(1000px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
 
 .Texto1 {
     font-family: 'Coolvetica';
