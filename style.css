@@ -10,7 +10,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline !important;
     text-decoration-color: white;
 }
 
@@ -171,7 +171,6 @@ a {
     text-decoration: none;
 }
 
-
 #Section3 {
     margin-left: 170px;
     padding-bottom: 5em;
@@ -225,11 +224,48 @@ footer{
     font-size: 20px;
 }
 
-/* @media screen and (max-width:999px) {
+@media screen and (max-width:999px) {
+    *{
+        margin-left: 0;
+    }
+    #busca, .search {
+        width: 20em;
+        margin-left: 2em;
+    }
+    form{
+        display: flex;
+    }
     #Section1{
         display: block;
+        margin: 0 auto;
     }
     .Texto1{
         text-align: center;
     }
-} */
+    .Cards{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .Card{
+        padding-bottom: 5em;
+    }
+    .conteudo{
+        display: block;
+    }
+    h2{
+        text-align: center;
+        margin-left: 0;
+    }
+    .texto2{
+        text-align: center;
+        width: 35em;
+        font-size: 20px;
+    }
+    .conteudo>img{
+        width: 720px;
+        height: 514px;
+        margin-right: 0; 
+        margin-left: 0;
+    }
+}   
