@@ -30,6 +30,8 @@ body {
     height: 3em;
     border: none;
     outline: 0;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .botão {
@@ -53,6 +55,7 @@ nav {
     justify-content: space-between;
     margin: 0 auto;
     padding: 5em 0;
+    margin-left: 170px;
 }
 
 nav > ol {
@@ -152,7 +155,7 @@ h2 {
 
 .conteudo {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-top: 2em;
 }
 
@@ -245,5 +248,9 @@ footer {
         height: auto; /* Mantém a proporção */
         margin-right: 0; 
         margin-left: 0;
+    }
+
+    #Section3{
+        padding-right: 2em;
     }
 }
