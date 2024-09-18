@@ -56,6 +56,7 @@ nav {
     margin: 0 auto;
     padding: 5em 0;
     margin-left: 170px;
+    margin-right: 170px;
 }
 
 nav > ol {
@@ -202,9 +203,16 @@ footer {
 
 /* Media Queries para Responsividade */
 @media screen and (max-width: 999px) {
+
+    nav{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
     #busca, .search {
-        width: 20em; /* Largura reduzida para mobile */
+        width: 10em; /* Largura reduzida para mobile */
         margin-left: 2em;
+        display: flex;
     }
 
     #Section1 {
