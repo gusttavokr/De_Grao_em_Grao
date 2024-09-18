@@ -1,12 +1,12 @@
 * {
     scroll-behavior: smooth;
-    /* font-family: 'Montserrat'; */
     margin: 0;
     padding: 0;
 }
 
 a {
     color: white !important;
+    text-decoration: none !important; /* Unifica a definição de texto decorado */
 }
 
 a:hover {
@@ -25,27 +25,21 @@ body {
     font-family: 'Montserrat';
 }
 
-#busca {
-    width: 40em;
+#busca, .search {
+    width: 40em; /* Largura original para desktop */
     height: 3em;
     border: none;
     outline: 0;
 }
 
-.search{
-    width: 40em;
-    height: 45px;
-    outline: 0;
-}
-
-.botão{
+.botão {
     border: none;
     width: 32px;
     height: 32px;
     margin-left: 10px;
 }
 
-input{
+input {
     vertical-align: middle;
 }
 
@@ -56,43 +50,33 @@ header {
 nav {
     display: flex;
     align-items: center;
-    /* margin-left: 170px; */
     justify-content: space-between;
-    margin-right: 170px;
     margin: 0 auto;
-    margin-left: 170px;
     padding: 5em 0;
 }
 
-nav>ol {
+nav > ol {
     display: flex;
     text-decoration: none;
     font-size: 20px;
 }
 
-nav>ol>li:hover{
+nav > ol > li:hover {
     text-decoration: underline;
 }
 
-li{
+li {
     list-style-type: none;
     padding: 2em;
 }
 
-a {
-    text-decoration: none !important;
-}
-
-
-#Section1{
+#Section1 {
     display: flex;
     justify-content: space-between;
     padding-bottom: 10em;
-    /* padding: 0 7em; */
 }
 
-#Section1>img{
-    /* height: 250px; */
+#Section1 > img {
     margin-top: 2em;
     margin-right: 170px;
 }
@@ -101,6 +85,15 @@ a {
     font-family: 'Coolvetica';
     margin-left: 170px;
     font-size: 50px;
+}
+
+.VerCatálogo {
+    background-color: #30EB43;
+    height: 60px;
+    width: 250px;
+    font-size: 32px;
+    border: none;
+    border-radius: 10px;
 }
 
 .VerCatálogo:hover {
@@ -123,23 +116,9 @@ a {
     font-size: 28px;
 }
 
-.VerCatálogo {
-    background-color: #30EB43;
-    height: 60px;
-    width: 250px;
-    font-size: 32px;
-    border: none;
-    border-radius: 10px;
-}
-
 svg {
     margin-right: 10px;
-    margin-left: -20px;
-    margin-top: -5px;
 }
-
-
-
 
 h2 {
     font-family: 'Coolvetica';
@@ -148,11 +127,10 @@ h2 {
 }
 
 #Section2 {
-    padding-top: 10em;
-    padding-bottom: 10em;
+    padding: 10em 0;
 }
 
-#Section2>h2 {
+#Section2 > h2 {
     text-align: center;
 }
 
@@ -162,13 +140,9 @@ h2 {
     justify-content: space-evenly;
 }
 
-.Card>p {
+.Card > p {
     text-align: center;
-    font-size: 30px
-}
-
-a {
-    text-decoration: none;
+    font-size: 30px;
 }
 
 #Section3 {
@@ -176,96 +150,100 @@ a {
     padding-bottom: 5em;
 }
 
-.conteudo{
+.conteudo {
     display: flex;
     justify-content: space-evenly;
     padding-top: 2em;
 }
 
-.conteudo>img{
+.conteudo > img {
     width: 720px;
     height: 514px;
     margin-right: 170px; 
     margin-left: 25em;
 }
 
-.conteudo>p{
+.conteudo > p {
     font-family: 'Montserrat';
 }
 
-.texto2{
+.texto2 {
     width: 700px;
     font-size: 20px;
 }
 
-footer{
+footer {
     width: 100%;
     height: 228px;
     background-color: #11A756;
 }
 
-.rodapé{
+.rodapé {
     padding-top: 3.5em;
     margin-left: 170px;
     display: flex;
-    /* justify-content: space-around; */
     align-items: center;
     text-align: center;
 }
 
-.rodapé>img{
+.rodapé > img {
     margin-right: 2em;
 }
 
-.rodapé>p{
+.rodapé > p {
     margin-top: 20px;
     margin-left: 2em;
     text-align: center;
     font-size: 20px;
 }
 
-@media screen and (max-width:999px) {
-    *{
-        margin-left: 0;
-    }
+/* Media Queries para Responsividade */
+@media screen and (max-width: 999px) {
     #busca, .search {
-        width: 20em;
+        width: 20em; /* Largura reduzida para mobile */
         margin-left: 2em;
     }
-    form{
-        display: flex;
-    }
-    #Section1{
-        display: block;
+
+    #Section1 {
+        display: block; /* Altera para block em telas menores */
         margin: 0 auto;
     }
-    .Texto1{
+
+    .Texto1 {
         text-align: center;
+        margin-left: 0; /* Remove margem em telas menores */
     }
-    .Cards{
-        display: block;
+
+    .Cards {
+        display: block; /* Muda para block */
         margin: 0 auto;
         text-align: center;
     }
-    .Card{
+
+    .Card {
         padding-bottom: 5em;
     }
-    .conteudo{
-        display: block;
+
+    .conteudo {
+        display: block; /* Muda para block */
     }
-    h2{
+
+    h2 {
         text-align: center;
         margin-left: 0;
     }
-    .texto2{
+
+    .texto2 {
         text-align: center;
-        width: 35em;
+        width: 35em; /* Largura reduzida */
         font-size: 20px;
     }
-    .conteudo>img{
-        width: 720px;
-        height: 514px;
+
+    .conteudo > img {
+        width: 100%; /* Largura total */
+        max-width: 720px; /* Largura máxima */
+        height: auto; /* Mantém a proporção */
         margin-right: 0; 
         margin-left: 0;
     }
-}   
+}
