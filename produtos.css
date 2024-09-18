@@ -139,3 +139,13 @@ footer{
     text-align: center;
     font-size: 20px;    
 }
+
+@media screen and (max-width: 999px){
+    .linha{
+        display: block;
+    }
+    .item{
+        text-align: center;
+        margin: 0 auto;
+    }
+}   
