@@ -7,6 +7,22 @@
     <link href="https://fonts.cdnfonts.com/css/coolvetica" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
     <title>Cadastre-se!</title>
+    <style>
+        #senha{
+            margin-bottom: 0;
+        }
+        form{
+            height: 30em;
+        }
+        @media screen and (max-width:730px) {
+            #confirmar{
+                width: 210px;
+                font-size: 15px;
+                margin-left: 1.2em;
+                margin-right: 3em;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -31,8 +47,8 @@
             <h2>Cadastre-se:</h2>
             <form action="dadosenviados.html">
                 <input type="email" id="email" placeholder="Digite seu email:"> <br>
-                <input type="email" id="senha" placeholder="Digite sua senha:"> <br>
-                <input type="email" id="confirmar" placeholder="Confirme sua senha:"> <br>
+                <input type="password" id="senha" placeholder="Digite sua senha:"> <br>
+                <input type="password" id="confirmar" placeholder="Confirme sua senha:"> <br>
                 <input type="submit" value="Cadastrar" id="Enviar">
             </form>
         </div>
