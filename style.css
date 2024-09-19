@@ -322,15 +322,6 @@ footer{
         font-size: 10px;
     }
 
-    /*footer{
-        margin-left: 0;
-    }
-    .rodapé{
-        display: flex;
-        justify-content: space-evenly;
-        gap: 20em;
-    } */
-
 }
 
 @media screen and (max-width:430px){
