@@ -122,11 +122,16 @@ footer{
     width: 100%;
     background-color: #11A756;
     bottom: 0;
+    padding: 2em;
 }
 
 .rodapé{
     display: flex;
     align-items: center;
+}
+
+.rodapé>img{
+    margin-right: 2em;
 }
 
 
