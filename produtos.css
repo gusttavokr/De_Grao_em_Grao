@@ -1,107 +1,106 @@
 *{
-    color: white;
-    font-family: 'Montserrat';
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+    color: #f0f0f0;
+    font-family: "Montserrat";
 }
 
-body {
-    background-color: rgb(20, 20, 20);
+body{
+    background-color: rgb(20, 20, 20);   
+    margin-left: 170px;
+    margin-right: 170px;
 }
 
-header {
-    margin-bottom: -20px;
-}
-
-nav {
-    display: flex;
+nav{
     align-items: center;
-    /* margin-left: 170px; */
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 5em 7em;
-}
-
-nav>ol {
     display: flex;
-    text-decoration: none;
-    font-size: 20px;
+    justify-content: space-between;
+    margin-top: 5em;
+    font-family: "Montserrat";
 }
 
-nav>ol>li:hover{
+.itens-navegação{
+    list-style-type: none;
+    display: flex;
+    gap: 2em;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
     text-decoration: underline;
 }
 
-li{
-    list-style-type: none;
-    padding: 2em;
+.botão{
+    width: 32px;
+    height: 32px;
 }
 
-a {
-    text-decoration: none !important;
+#busca{
+    padding: 2em;
+    height: 20px;
+    width: 30em;
+    border: none;
+    outline: 0;
+    color: black;
 }
+
+input{
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 h2{
     text-align: center;
+    font-family: "Coolvetica";
     color: #30EB43;
-    font-size: 5em;
+    font-size: 80px;
 }
 
-
-.linha{
-    display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 2em;
-}
-
-.item{
-    width: 300px;
-    display: block;
-}
-
-figcaption{
-    font-size: 2em;
-    text-align: center;
-    margin-top: -2em;
-}
-
-.item:hover{
-    text-decoration: underline;
-}
-
-figure>img{
+figure, figure>img{
     width: 300px;
     height: 300px;
 }
 
-.item>p{
+.linha{
+    display: flex;
     text-align: center;
-    font-size: 20px;
-    padding-bottom: 2em;
+    justify-content: space-around;
 }
 
-#Adicionar {
-    /* color: black;
+figcaption{
+    font-size: 30px;
+}
+
+#Adicionar{
     background-color: #30EB43;
-    border: none; */
-    text-align: center;
-    margin: 0 auto;
     color: black;
-    background-color: #30EB43;
-    height: 60px;
-    width: 250px;
-    font-size: 32px;
+    font-family: "Coolvetica";
     border: none;
-    border-radius: 10px;
-    font-family: "coolvetica";
-    margin-left: 25px;
+    width: 200px;
+    height: 60px;
+    font-size: 30px;
 }
 
-#ultima{
-    padding-bottom: 10em;
-}
+
 
 
 
@@ -114,19 +113,17 @@ figure>img{
 
 
 footer{
-    position: relative;
-    bottom: 0px;
-    width: 100%;
-    height: 191px;
+    margin-top: 5em;
+    max-width: 100%;
     background-color: #11A756;
+    bottom: 0;
+    padding: 2em;
 }
 
 .rodapé{
-    padding-top: 2em;
-    margin-left: 170px;
+    margin-left: 50px;
     display: flex;
     align-items: center;
-    text-align: center;
 }
 
 .rodapé>img{
@@ -135,17 +132,73 @@ footer{
 
 .rodapé>p{
     margin-top: 20px;
-    margin-left: 2em;
-    text-align: center;
-    font-size: 20px;    
+    font-size: 20px;
 }
 
-@media screen and (max-width: 999px){
-    .linha{
-        display: block;
+@media screen and (max-width:730px) {
+    /* NAVEGAÇÃO */
+    *{
+        font-size: 10px;
+        overflow-x: hidden;
     }
-    .item{
-        text-align: center;
-        margin: 0 auto;
+    body{
+        margin:0;
+        padding: 0;
     }
-}   
+    nav{
+        vertical-align: middle  ;
+        display: flex;
+        margin-left: 20px;
+        align-items: center;
+        margin-top: 2em;
+    }
+    #logomarca{
+        width: 82px;
+        height: 46px;
+    }
+    .botão{
+        width: 16px;
+        height:16px
+    }
+    .itens-navegação{
+        margin-right: 50px;
+        gap: 1;
+    }
+
+
+    h2{
+        font-size: 50px;
+    }
+
+    figure, figure>img{
+        width: 120px;
+        height: 120px;
+    }
+    svg{
+        width: 20px;
+        margin-right: 20px;
+    }
+
+    #Adicionar{
+        width: 100px;
+        height: 30px;
+        font-size: 25px;
+    }
+
+    figcaption{
+        font-size: 20px;
+    }
+    
+
+    /* Footer */
+    footer{
+        width: 100%;
+    }
+    #barra{
+        height: 46px;
+    }
+
+    .rodapé>p{
+        font-size: 10px;
+    }
+}
