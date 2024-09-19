@@ -1,90 +1,191 @@
-* {
+*{
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+    color: #f0f0f0;
+    font-family: "Montserrat";
 }
 
-a {
-    color: white !important;
-    text-decoration: none !important; /* Unifica a definição de texto decorado */
-}
-
-a:hover {
-    text-decoration: underline !important;
-    text-decoration-color: white;
-}
-
-body {
-    background-color: rgb(20, 20, 20);
-    color: white;
-}
-
-.pesquisa {
-    margin: 0 auto;
-    display: flex;
-    font-family: 'Montserrat';
-}
-
-#busca, .search {
-    max-width: 40em; /* Largura original para desktop */
-    height: 3em;
-    border: none;
-    outline: 0;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
-.botão {
-    border: none;
-    width: 32px;
-    height: 32px;
-    margin-left: 10px;
-}
-
-input {
-    vertical-align: middle;
-}
-
-header {
-    margin-bottom: -20px;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 5em 0;
+body{
+    background-color: rgb(20, 20, 20);   
     margin-left: 170px;
     margin-right: 170px;
 }
 
-nav > ol {
+nav{
+    align-items: center;
     display: flex;
-    text-decoration: none;
-    font-size: 20px;
+    justify-content: space-between;
+    margin-top: 5em;
+    font-family: "Montserrat";
 }
 
-nav > ol > li:hover {
+.itens-navegação{
+    list-style-type: none;
+    display: flex;
+    gap: 2em;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
     text-decoration: underline;
 }
 
-li {
-    list-style-type: none;
+.botão{
+    width: 32px;
+    height: 32px;
+}
+
+#busca{
+    padding: 2em;
+    height: 20px;
+    width: 30em;
+    border: none;
+    outline: 0;
+    color: black;
+}
+
+input{
+    vertical-align: middle;
+}
+
+
+
+section{
+    margin-top: 5em;
+}
+
+.Qualidade{
+    font-family: "Coolvetica";
+    font-size: 40px;
+    margin-bottom: -50px;
+}
+
+.Detalhe{
+    font-family: "Coolvetica";
+    font-size: 120px;
+    color: #30EB43;
+    margin-bottom: -40px;
+}
+
+.Sub{
+    font-size: 20px;
+}
+
+.VerCatálogo{
+    background-color: #30EB43;
+    width: 250px;
+    height: 60px;
+    font-family: "Coolvetica";
+    color: rgb(20, 20, 20);
+    border: none;
+    font-size: 30px;
+}
+
+svg{
+    width: 32px;
+    height: 32px;
+}
+
+#Section1{
+    display: flex;
+    justify-content: space-between;     
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 10em;
+}
+
+#bule{
+    margin-top: -2em;
+    animation: bounce 1.5s;
+}
+
+
+
+
+
+
+
+#Section2 {
+    padding: 10em 0;
+}
+
+h2{
+    text-decoration: underline;
+    font-family: 'Coolvetica';
+    font-size: 50px;
+    padding-bottom: 0.5em
+}
+
+#hdois{
+    /* text-align: center; */
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 0;
+}
+
+.Cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Card>p{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+.conteudo{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 20em;
+}
+
+.conteudo>img{
+    width: 720px;
+    height: 514px;
+}
+
+
+
+
+
+
+footer{
+    margin-top: 5em;
+    max-width: 100%;
+    background-color: #11A756;
+    bottom: 0;
     padding: 2em;
 }
 
-#Section1 {
+.rodapé{
+    margin-left: 50px;
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 10em;
+    align-items: center;
 }
 
-#Section1 > img {
-    margin-top: 2em;
-    margin-right: 170px;
-    animation: bounce 1.5s;
+.rodapé>img{
+    margin-right: 2em;
 }
+
+.rodapé>p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
 
 @keyframes bounce {
     from{
@@ -95,195 +196,149 @@ li {
     }
 }
 
-
-.Texto1 {
-    font-family: 'Coolvetica';
-    margin-left: 170px;
-    font-size: 50px;
-}
-
-.VerCatálogo {
-    background-color: #30EB43;
-    height: 60px;
-    width: 250px;
-    font-size: 32px;
-    border: none;
-    border-radius: 10px;
-}
-
-.VerCatálogo:hover {
-    text-decoration: underline;
-}
-
-.Qualidade {
-    margin-top: 50px;
-    margin-bottom: -65px;
-}
-
-.Detalhe {
-    color: #30EB43;
-    font-size: 150px;
-    margin-bottom: -50px;
-}
-
-.Sub {
-    font-family: 'Montserrat';
-    font-size: 28px;
-}
-
-svg {
-    margin-right: 10px;
-}
-
-h2 {
-    font-family: 'Coolvetica';
-    font-size: 50px;
-    text-decoration: underline;
-}
-
-#Section2 {
-    padding: 10em 0;
-}
-
-#Section2 > h2 {
-    text-align: center;
-}
-
-.Cards {
-    padding-top: 2em;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.Card > p {
-    text-align: center;
-    font-size: 30px;
-}
-
-#Section3 {
-    margin-left: 170px;
-    padding-bottom: 5em;
-}
-
-.conteudo {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 2em;
-}
-
-.conteudo > img {
-    width: 720px;
-    height: 514px;
-    margin-right: 170px; 
-    margin-left: 25em;
-}
-
-.conteudo > p {
-    font-family: 'Montserrat';
-}
-
-.texto2 {
-    font-size: 20px;
-}
-
-footer {
-    width: 100%;
-    height: 228px;
-    background-color: #11A756;
-}
-
-.rodapé {
-    padding-top: 3.5em;
-    margin-left: 170px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-.rodapé > img {
-    margin-right: 2em;
-}
-
-.rodapé > p {
-    margin-top: 20px;
-    margin-left: 2em;
-    text-align: center;
-    font-size: 20px;
-}
-
-/* Media Queries para Responsividade */
-@media screen and (max-width: 730px) {
-    main{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+@media screen and (max-width:730px) {
+    /* NAVEGAÇÃO */
+    *{
+        font-size: 10px;
     }
-    body {
-        font-size: 0.1em;
-    }
-    nav img {
-        max-width: 100px;
+    body{
+        margin:0;
+        padding: 0;
     }
     nav{
-        margin-right: 20px;
-        margin-left: 20px;
-    }
-
-    #busca, .search {
-        width: 10em; /* Largura reduzida para mobile */
-        margin-left: 2em;
+        vertical-align: middle  ;
         display: flex;
+        margin-left: 30px;
+        align-items: center;
+        margin-top: 2em;
+    }
+    #logo{
+        width: 82px;
+        height: 46px;
+    }
+    #busca{
+        width: 100px;
+        height: 20px;
+        padding: 0;
+        padding-left: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .botão{
+        width: 16px;
+        height:16px
+    }
+    .itens-navegação{
+        margin-right: 50px;
+        gap: 1;
     }
 
-    #Section1 {
-        display: block; /* Altera para block em telas menores */
-        margin: 0 auto;
+    /* SECTION 1 */
+    #Section1{
+        display: block;
+        margin-top: 5em;
     }
-
+    .Texto1{
+        text-align: center;
+    }
+    .Qualidade{
+        font-size: 25px;
+        margin-bottom: -35px;
+    }
+    .Detalhe{
+        font-size: 70px;
+        margin-top: 0;
+        margin-bottom: -25px;   
+    }
+    .Sub{
+        font-size: 10px;
+    }
     #Section1>img{
         display: none;
     }
-    .Texto1 {
-        text-align: center;
-        margin-left: 0; /* Remove margem em telas menores */
+    .VerCatálogo{
+        width: 150px;
+        font-size: 20px;
+        height: 30px;
     }
 
-    .Cards {
-        display: block; /* Muda para block */
+    /* SECTION2 */
+    h2{
+        font-size: 20px;
+    }
+    .Cards{
+        display: block;
         margin: 0 auto;
         text-align: center;
     }
 
-    .Card {
-        padding-bottom: 5em;
-    }
-
-    .conteudo {
-        display: block; /* Muda para block */
-    }
-
-    h2 {
+    .Card, .Card>img{
+        width: 200px;
+        height: 260px;
         text-align: center;
-        margin-left: 0;
+        margin: 0 auto;
     }
-
-    .texto2 {
-        text-align: center;
-        max-width: 35em; /* Largura reduzida */
+    .Card{
+        margin-bottom: 60px;
+    }
+    .Card>p{
+        margin-top: 10px;
         font-size: 20px;
     }
 
-    .conteudo > img {
-        width: 100%; /* Largura total */
-        max-width: 720px; /* Largura máxima */
-        height: auto; /* Mantém a proporção */
-        margin-right: 0; 
-        margin-left: 0;
+    /* SECTION3 */
+    .conteudo{
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+    }
+    #Section3>h2{
+        text-align: center;
+    }
+    
+    .conteudo>img{
+        width: 230px;
+        height: 164px;
+        text-align: center;
+        margin-left: 30px;
+    }
+    .texto2{
+        text-align: center;
     }
 
-    #Section3{
-        padding-right: 2em;
+    /* FOOTER */
+    footer{
+        width: 100%;
+    }
+    #barra{
+        height: 46px;
+    }
+
+    .rodapé>p{
+        font-size: 10px;
+    }
+
+    /*footer{
         margin-left: 0;
+    }
+    .rodapé{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20em;
+    } */
+
+}
+
+@media screen and (max-width:430px){
+    .itens-navegação{
+        display: none;
+    }
+
+    nav{
+        margin-right: 20px;
+    }
+
+    #busca{
+        width: 15em;
     }
 }
