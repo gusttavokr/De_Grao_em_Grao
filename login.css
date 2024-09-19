@@ -143,8 +143,13 @@ footer{
 
 
 @media screen and (max-width: 999px){
+    body{
+        height: 100vh;
+    }
+    
     main{
         display: block;
+        height: 100vh;
     }
 
     #logo{

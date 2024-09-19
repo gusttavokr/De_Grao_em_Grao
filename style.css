@@ -26,7 +26,7 @@ body {
 }
 
 #busca, .search {
-    width: 40em; /* Largura original para desktop */
+    max-width: 40em; /* Largura original para desktop */
     height: 3em;
     border: none;
     outline: 0;
@@ -183,7 +183,6 @@ h2 {
 }
 
 .texto2 {
-    width: 700px;
     font-size: 20px;
 }
 
@@ -213,8 +212,19 @@ footer {
 }
 
 /* Media Queries para Responsividade */
-@media screen and (max-width: 999px) {
-
+@media screen and (max-width: 730px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    body {
+        font-size: 0.1em;
+    }
+    nav img {
+        max-width: 100px;
+    }
     nav{
         margin-right: 20px;
         margin-left: 20px;
@@ -260,7 +270,7 @@ footer {
 
     .texto2 {
         text-align: center;
-        width: 35em; /* Largura reduzida */
+        max-width: 35em; /* Largura reduzida */
         font-size: 20px;
     }
 
@@ -274,5 +284,6 @@ footer {
 
     #Section3{
         padding-right: 2em;
+        margin-left: 0;
     }
 }
