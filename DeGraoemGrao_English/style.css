@@ -1,0 +1,339 @@
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    color: #f0f0f0;
+    font-family: "Montserrat";
+}
+
+body{
+    background-color: rgb(20, 20, 20);   
+    margin-left: 170px;
+    margin-right: 170px;
+}
+
+nav{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5em;
+    font-family: "Montserrat";
+}
+
+.itens-navegação{
+    list-style-type: none;
+    display: flex;
+    gap: 2em;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.botão{
+    width: 32px;
+    height: 32px;
+}
+
+#busca{
+    padding: 2em;
+    height: 20px;
+    width: 30em;
+    border: none;
+    outline: 0;
+    color: black;
+}
+
+input{
+    vertical-align: middle;
+}
+
+
+
+section{
+    margin-top: 5em;
+}
+
+.Qualidade{
+    font-family: "Coolvetica";
+    font-size: 40px;
+    margin-bottom: -50px;
+}
+
+.Detalhe{
+    font-family: "Coolvetica";
+    font-size: 120px;
+    color: #30EB43;
+    margin-bottom: -40px;
+}
+
+.Sub{
+    font-size: 20px;
+}
+
+.VerCatálogo{
+    background-color: #30EB43;
+    width: 250px;
+    height: 60px;
+    font-family: "Coolvetica";
+    color: rgb(20, 20, 20);
+    border: none;
+    font-size: 30px;
+}
+
+.VerCatálogo:hover{
+    text-decoration: underline;
+}
+
+svg{
+    width: 32px;
+    height: 32px;
+}
+
+#Section1{
+    display: flex;
+    justify-content: space-between;     
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 10em;
+}
+
+#bule{
+    margin-top: -2em;
+    animation: bounce 1.5s;
+}
+
+
+
+
+
+
+
+#Section2 {
+    padding: 10em 0;
+}
+
+h2{
+    text-decoration: underline;
+    font-family: 'Coolvetica';
+    font-size: 50px;
+    padding-bottom: 0.5em
+}
+
+#hdois{
+    /* text-align: center; */
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 0;
+}
+
+.Cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Card>p{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+.conteudo{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 20em;
+}
+
+.conteudo>img{
+    width: 720px;
+    height: 514px;
+}
+
+
+
+
+
+
+footer{
+    margin-top: 5em;
+    max-width: 100%;
+    background-color: #11A756;
+    bottom: 0;
+    padding: 2em;
+}
+
+.rodapé{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.rodapé>img{
+    margin-right: 2em;
+}
+
+.rodapé>p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+
+@keyframes bounce {
+    from{
+        transform: translateX(1000px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@media screen and (max-width:730px) {
+    /* NAVEGAÇÃO */
+    *{
+        font-size: 10px;
+    }
+    body{
+        margin:0;
+        padding: 0;
+    }
+    nav{
+        vertical-align: middle  ;
+        display: flex;
+        margin-left: 30px;
+        align-items: center;
+        margin-top: 2em;
+    }
+    #logo{
+        width: 82px;
+        height: 46px;
+    }
+    #busca{
+        width: 100px;
+        height: 20px;
+        padding: 0;
+        padding-left: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .botão{
+        width: 16px;
+        height:16px
+    }
+    .itens-navegação{
+        margin-right: 50px;
+        gap: 1;
+    }
+
+    /* SECTION 1 */
+    #Section1{
+        display: block;
+        margin-top: 5em;
+    }
+    .Texto1{
+        text-align: center;
+    }
+    .Qualidade{
+        font-size: 25px;
+        margin-bottom: -35px;
+    }
+    .Detalhe{
+        font-size: 70px;
+        margin-top: 0;
+        margin-bottom: -25px;   
+    }
+    .Sub{
+        font-size: 10px;
+    }
+    #Section1>img{
+        display: none;
+    }
+    .VerCatálogo{
+        width: 150px;
+        font-size: 20px;
+        height: 30px;
+    }
+
+    /* SECTION2 */
+    h2{
+        font-size: 20px;
+    }
+    .Cards{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .Card, .Card>img{
+        width: 200px;
+        height: 260px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .Card{
+        margin-bottom: 60px;
+    }
+    .Card>p{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    /* SECTION3 */
+    .conteudo{
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+    }
+    #Section3>h2{
+        text-align: center;
+    }
+    
+    .conteudo>img{
+        width: 230px;
+        height: 164px;
+        text-align: center;
+        margin-left: 30px;
+    }
+    .texto2{
+        text-align: center;
+    }
+
+    /* FOOTER */
+    footer{
+        width: 100%;
+    }
+    #barra{
+        height: 46px;
+    }
+
+    .rodapé>p{
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width:430px){
+    .itens-navegação{
+        display: none;
+    }
+
+    nav{
+        margin-right: 20px;
+    }
+
+    #busca{
+        width: 15em;
+    }
+}
